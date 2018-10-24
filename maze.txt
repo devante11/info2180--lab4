@@ -1,0 +1,27 @@
+function restart() {
+	document.location.href = "";
+}
+
+function changeColor () {
+  document.getElementById("boundary1").classList.add("youlose");
+  document.getElementById("status").innerHTML = "You Lose!";
+}
+
+//changeColor();
+
+
+function changeBoundary () {
+	var bound = document.querySelectorAll(".boundary"), i;
+	
+	document.getElementById("status").innerHTML = "You Lose!";
+	
+	for (i = 0; i < bound.length; i++) {
+		bound[i].classList.add("youlose");
+		}
+}
+
+//changeBoundary();
+
+function youWin() {
+  document.getElementById("status").innerHTML = "You Win!";
+}
